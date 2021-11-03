@@ -30,6 +30,8 @@ function generationElement (elementGenerated, classAdded) {
 
 }
 
+/* andiamo a dare la funzione di click ai bottoni con l'aggiunta della funzione per creare i quadrati in base al livello scelto dall'utente */
+
 buttonEasy.addEventListener('click', function() {
     play(this.value, 'squareEasy');
 });
@@ -46,7 +48,7 @@ buttonHard.addEventListener('click', function() {
 
 function play(difficulty, classes) {
     
-    for (let i = 1; i < difficulty; i++){
+    for (let i = 1; i <= difficulty; i++){
 
         let newElement = generationElement("div", classes);
 
